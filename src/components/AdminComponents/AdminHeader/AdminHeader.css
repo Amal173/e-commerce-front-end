@@ -1,0 +1,45 @@
+.admin-header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+}
+.admin-header .brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-header .brand-logo h1 {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.admin-header .brand-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.admin-header .brand-logo img {
+  width: 100px;
+}
+.admin-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+.admin-header nav ul li a,
+.admin-header nav ul li button {
+  text-decoration: none;
+  color: #000000;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}

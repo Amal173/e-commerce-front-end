@@ -1,0 +1,7 @@
+.carousel-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.carousel-container .slick-slider button::before {
+  color: black;
+}

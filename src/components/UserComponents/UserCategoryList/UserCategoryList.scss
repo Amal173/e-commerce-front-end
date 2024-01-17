@@ -1,0 +1,19 @@
+.user-category{
+padding: 20px;
+    .container{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    .category-list{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-around;
+        button{
+            border: none;
+            background: transparent;
+            font-size: 24px;
+        }
+    }
+    }
+}

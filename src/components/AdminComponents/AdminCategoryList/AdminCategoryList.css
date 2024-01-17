@@ -1,0 +1,59 @@
+.category-list .category-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.category-list .category-title button {
+  background-color: aqua;
+  cursor: pointer;
+}
+.category-list .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.category-list .card {
+  background-color: aliceblue;
+  width: 250px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.category-list .card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+.category-list .card .card-details {
+  padding: 15px;
+}
+.category-list .card .card-details h3 {
+  margin: 0 0 10px;
+  color: black;
+}
+.category-list .card .card-details p {
+  margin: 0 0 10px;
+  color: #888;
+}
+.category-list .card .card-details .actions {
+  display: flex;
+  justify-content: space-between;
+}
+.category-list .card .card-details .actions button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: aqua;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.category-list .card .card-details .actions button:hover {
+  background-color: #00cccc;
+}
+.category-list .card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}

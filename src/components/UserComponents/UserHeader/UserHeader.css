@@ -1,0 +1,43 @@
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header .container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header .brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .container .header .brand-logo img {
+  width: 130px;
+}
+header .container .header input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+  width: 500px;
+}
+header .container .header .buttons {
+  display: flex;
+  gap: 20px;
+}
+header .container .header .buttons button {
+  text-decoration: none;
+  color: #000000;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.order-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.order-success .order-summary-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.order-success .order-summary-container .product-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.order-success .order-summary-container .product-details img {
+  max-width: 40%;
+  margin-right: 20px;
+}
+.order-success .order-summary-container .product-details div h2 {
+  margin-bottom: 5px;
+}
+.order-success .order-summary-container .shipping-address, .order-success .order-summary-container .order-details {
+  margin-bottom: 20px;
+}
+.order-success .order-summary-container .shipping-address h3, .order-success .order-summary-container .order-details h3 {
+  margin-bottom: 10px;
+}
+.order-success .order-summary-container .shipping-address p, .order-success .order-summary-container .order-details p {
+  margin: 5px 0;
+}
+.order-success .order-summary-container .shipping-address p span, .order-success .order-summary-container .order-details p span {
+  font-size: 17px;
+  font-weight: 700;
+}

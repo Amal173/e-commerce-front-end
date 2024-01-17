@@ -1,0 +1,26 @@
+
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #1d1619;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  top: 66px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken(blue, 10%);
+      }
+    }
+  }
+}

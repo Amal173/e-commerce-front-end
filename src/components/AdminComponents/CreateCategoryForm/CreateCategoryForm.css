@@ -1,0 +1,38 @@
+.create-category-form {
+  z-index: 3;
+  position: absolute;
+  top: 32%;
+  left: 35%;
+  width: 40%;
+  padding: 30px 50px;
+  border-radius: 15px;
+  background-color: #47005d;
+}
+.create-category-form .title {
+  display: flex;
+  justify-content: space-between;
+}
+.create-category-form .title i {
+  font-size: 24px;
+}
+.create-category-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+.create-category-form .buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.create-category-form .buttons button {
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.create-category-form .buttons button:hover {
+  background-color: #aeb7c2;
+}

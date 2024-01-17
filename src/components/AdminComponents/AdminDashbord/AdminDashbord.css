@@ -1,0 +1,15 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.dashboard .content-container {
+  display: flex;
+  flex: 1;
+  padding-top: 70px;
+}
+.dashboard .main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 190px;
+}

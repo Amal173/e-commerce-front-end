@@ -1,0 +1,18 @@
+.user-category {
+  padding: 20px;
+}
+.user-category .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.user-category .container .category-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+}
+.user-category .container .category-list button {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+}
