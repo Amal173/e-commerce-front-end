@@ -17,8 +17,9 @@ function UserProductList({ data }) {
 
 
   return (
-    <>
-      {Array.isArray(product.products) && product.products.length > 0 && product.products.map((data) => (
+
+     <div className='list-product'>
+       {Array.isArray(product.products) && product.products.length > 0 && product.products.map((data) => (
         <div class="card" key={data._id}>
           <img src={`http://localhost:4040/uploads/${data.productImages[0]}`} alt=''/>
           <h1>{data.productName}</h1>
@@ -28,7 +29,8 @@ function UserProductList({ data }) {
           <p><button>Add to Cart</button></p>
         </div>
       ))}
-    </>
+
+     </div>
   )
 }
 

@@ -15,17 +15,18 @@ import UserCart from './components/UserComponents/UserCart/UserCart';
 import CheckoutSuccess from './components/UserComponents/CheckoutSuccess/CheckoutSuccess';
 import UserOrders from './components/UserComponents/UserOrders/UserOrders';
 import OrderSuccess from './components/UserComponents/OrderSuccess/OrderSuccess';
+import OrderDetails from './components/AdminComponents/OrderDetails/OrderDetails';
 
 
 function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path='/' element={<UserLogin/>} />
         <Route path='/admin/login' element={<AdminLogin />} />
         <Route path='/admin' element={<AdminDashbord />} />
         <Route path='/admin/products' element={<AdminProductList/>} />
         <Route path='/admin/products/details' element={<AdminProductDetails/>} />
-        <Route path='/' element={<UserLogin/>} />
         <Route path='/register' element={<UserRegister/>} />
         <Route path='/home' element={<UserDashbord/>} />
         <Route path='/products' element={<UserCategoryWiseProductList/>} />
@@ -34,6 +35,7 @@ function App() {
         <Route path='/checkout-success' element={<CheckoutSuccess/>} />
         <Route path='/orders' element={<UserOrders/>} />
         <Route path='/order-success' element={<OrderSuccess/>} />
+        <Route path='/order-details' element={<OrderDetails/>} />
       </Routes>
     </div>
   );

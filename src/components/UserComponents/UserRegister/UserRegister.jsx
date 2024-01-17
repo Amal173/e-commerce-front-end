@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchAsyncUserRegister } from '../../../Redux/Slices/UserSlice'
 import { useNavigate } from 'react-router-dom'
+import './UserRegister.css'
 function UserRegister() {
     const { success } = useSelector(
         (state) => state.users

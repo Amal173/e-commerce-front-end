@@ -1,3 +1,4 @@
+/* CreateCategoryForm.scss */
 .create-category-form {
   z-index: 3;
   position: absolute;
@@ -6,7 +7,7 @@
   width: 40%;
   padding: 30px 50px;
   border-radius: 15px;
-  background-color: #47005d;
+  background-color: #e1dada;
 }
 .create-category-form .title {
   display: flex;
@@ -14,11 +15,17 @@
 }
 .create-category-form .title i {
   font-size: 24px;
+  color: #fff;
+  cursor: pointer;
 }
 .create-category-form input {
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid transparent;
+  margin-bottom: 15px;
+  background-color: #fff;
+  color: #333;
 }
 .create-category-form .buttons {
   display: flex;
@@ -32,7 +39,18 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  color: #fff;
+  transition: background-color 0.3s;
 }
-.create-category-form .buttons button:hover {
-  background-color: #aeb7c2;
+.create-category-form .buttons button.submit {
+  background-color: #4caf50;
+}
+.create-category-form .buttons button.submit:hover {
+  background-color: #45a049;
+}
+.create-category-form .buttons button.cancel {
+  background-color: #e74c3c;
+}
+.create-category-form .buttons button.cancel:hover {
+  background-color: #c0392b;
 }

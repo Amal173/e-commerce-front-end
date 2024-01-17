@@ -1,0 +1,83 @@
+.content-container {
+  display: flex;
+  flex: 1;
+  padding-top: 70px;
+}
+.content-container .main-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 190px;
+}
+.content-container .main-content .order-details {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content-container .main-content .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.content-container .main-content .header p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.content-container .main-content .card-detail {
+  display: flex;
+}
+.content-container .main-content .card-detail .left-card,
+.content-container .main-content .card-detail .right-card {
+  flex: 1;
+  padding: 10px;
+}
+.content-container .main-content .card-detail .left-card h4,
+.content-container .main-content .card-detail .right-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.content-container .main-content .card-detail .left-card p,
+.content-container .main-content .card-detail .right-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.content-container .main-content .card-detail .right-card {
+  margin-left: 20px;
+}
+.content-container .main-content .table {
+  margin-top: 20px;
+}
+.content-container .main-content .table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.content-container .main-content .table table tr th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.content-container .main-content .table table tr td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.content-container .main-content .table table .table-head {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.content-container .main-content .table table img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+.content-container .main-content .table .total-price {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-right: 200px;
+  font-size: 18px;
+  font-weight: bold;
+}

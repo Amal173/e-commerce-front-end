@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import AdminHeader from '../AdminHeader/AdminHeader'
 import AdminSideBar from '../AdminSideBar/AdminSideBar'
-import './AdminProductDetails.css'
 import { useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchAsyncProductsById, getProductById } from '../../../Redux/Slices/ProductSlice'
+import './AdminProductDetails.css'
 function AdminProductDetails() {
     const location = useLocation();
     const dispatch = useDispatch()
@@ -34,9 +34,9 @@ function AdminProductDetails() {
                     </div>
                     <div className='product-detail'>
                             <button className='edit-button'>edit product</button>
-                        <h1>{productData.products.productName}</h1>
-                        <p>Price : {productData.products.productPrice}</p>
-                        <p>spec : {productData.products.productSpecs}</p>
+                        <h1>{productData.products?.productName}</h1>
+                        <p>Price : {productData.products?.productPrice}</p>
+                        <p>spec : {productData.products?.productSpecs}</p>
 
                     </div>
                 </div>

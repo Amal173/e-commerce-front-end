@@ -11,7 +11,9 @@ const initialState = {
     user:[],
     cart:[],
     userOrder:[],
-    orderDetails:[]
+    orderDetails:[],
+    orderDetailsById:[],
+    allOrders:[],
 
 };
 
@@ -91,6 +93,18 @@ export const fetchAsyncUserOrders = createAsyncThunk('users/fetchAsyncUserOrders
     return response.data;
 });
 
+export const fetchAsyncOrderDetails = createAsyncThunk('users/fetchAsyncOrderDetails', async (id) => {
+    const response = await axios.get(`http://localhost:4040/stripe/Order-details/${id}`, );
+    console.log("response data get user order details", response);
+    return response.data;
+});
+
+export const fetchAsyncAllOrders = createAsyncThunk('users/fetchAsyncAllOrders', async (id) => {
+    const response = await axios.get(`http://localhost:4040/stripe/getOrder`, );
+    console.log("response data get user order", response);
+    return response.data;
+});
+
 const userSlice = createSlice({
     name: 'users',
     initialState,
@@ -147,6 +161,14 @@ const userSlice = createSlice({
         builder.addCase(fetchAsyncRetrieveSession.fulfilled, (state, { payload }) => {
             state.loading = false
             state.orderDetails = payload
+        });
+        builder.addCase(fetchAsyncAllOrders.fulfilled, (state, { payload }) => {
+            state.loading = false
+            state.allOrders = payload
+        });
+        builder.addCase(fetchAsyncOrderDetails.fulfilled, (state, { payload }) => {
+            state.loading = false
+            state.orderDetailsById = payload
         });
 
 

@@ -1,29 +1,53 @@
+
+.list-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-  
-  
-  .price {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
+  text-align: center;
+
+  img {
     width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  h1 {
     font-size: 18px;
+    margin-bottom: 8px;
   }
-  
-  .card button:hover {
-    opacity: 0.7;
+
+  p.price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
   }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+}
 }

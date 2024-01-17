@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { fetchAsyncUserCheckoutCart } from '../../../Redux/Slices/UserSlice';
-
+import './CheckoutButton.css'
 function CheckoutButton({cartItems,totalPrice}) {
 const dispatch=useDispatch()
 

@@ -1,4 +1,6 @@
-.create-category-form{
+/* CreateCategoryForm.scss */
+
+.create-category-form {
     z-index: 3;
     position: absolute;
     top: 32%;
@@ -6,36 +8,60 @@
     width: 40%;
     padding: 30px 50px;
     border-radius: 15px;
-    background-color: #47005d;
-    .title{
-        display: flex;
-        justify-content: space-between;
-        i{
-            font-size: 24px;
-        }
+    background-color: #e1dada;
+  
+    .title {
+      display: flex;
+      justify-content: space-between;
+  
+      i {
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+      }
     }
-    
+  
     input {
-        padding: 10px;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      margin-bottom: 15px;
+      background-color: #fff;
+      color: #333;
+    }
+  
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+  
+      button {
+        padding: 7px 15px;
         border-radius: 5px;
         border: 1px solid transparent;
-    }
-    .buttons{
-        display: flex;
-        gap: 20px;
-        justify-content: flex-end;
-        button{
-            padding:7px 15px;
-            border-radius: 5px;
-            border: 1px solid transparent;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 600;
-
-            &:hover {
-                background-color: #aeb7c2;
-
-            }
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        transition: background-color 0.3s;
+  
+        &.submit {
+          background-color: #4caf50;
+  
+          &:hover {
+            background-color: #45a049;
+          }
         }
+  
+        &.cancel {
+          background-color: #e74c3c;
+  
+          &:hover {
+            background-color: #c0392b;
+          }
+        }
+      }
     }
-}
+  }
+  

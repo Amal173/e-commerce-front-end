@@ -1,5 +1,6 @@
+/* UserOrders.scss */
 .user-orders {
-  padding: 30px 0px;
+  padding: 30px 0;
 }
 .user-orders .container {
   max-width: 1200px;
@@ -8,9 +9,13 @@
   flex-direction: column;
   gap: 50px;
 }
-.user-orders .container .tilte {
+.user-orders .container .title {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+}
+.user-orders .container .title h1 {
+  font-size: 24px;
 }
 .user-orders .container .orders {
   width: 100%;
@@ -40,16 +45,34 @@
 .user-orders .container .orders .products .product .product-detail p span {
   font-size: 15px;
   font-weight: 700;
+  color: #333; /* Adjust color as needed */
 }
 .user-orders .container .orders .products .product img {
+  height: 300px;
   width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
 }
 .user-orders .container .orders .order-details {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+.user-orders .container .orders .order-details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .user-orders .container .orders .order-details p span {
   font-size: 15px;
   font-weight: 700;
+  color: #333; /* Adjust color as needed */
+}
+.user-orders .container .orders h1 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.user-orders .container .orders p {
+  font-size: 16px;
+  color: #555; /* Adjust color as needed */
 }

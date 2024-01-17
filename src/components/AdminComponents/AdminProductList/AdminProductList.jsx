@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import './AdminProductList.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { DisplayProductDeleteModal, DisplayUpdateProductsForm, fetchAsyncProducts, getProducts, showUpdateProductsForm, showdeleteWarningModal } from '../../../Redux/Slices/ProductSlice';
 import ProductDeleteConfirmationModal from '../ProductDeleteConfirmationModal/ProductDeleteConfirmationModal';
@@ -7,6 +6,7 @@ import AdminHeader from '../AdminHeader/AdminHeader';
 import AdminSideBar from '../AdminSideBar/AdminSideBar';
 import { useLocation, useNavigate } from 'react-router-dom';
 import UpdateProductForm from '../UpdateProductForm/UpdateProductForm';
+import './AdminProductList.css'
 function AdminProductList() {
 
   const dispatch = useDispatch();

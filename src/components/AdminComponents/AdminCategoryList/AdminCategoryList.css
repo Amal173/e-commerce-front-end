@@ -6,6 +6,11 @@
 .category-list .category-title button {
   background-color: aqua;
   cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 700;
 }
 .category-list .card-container {
   display: flex;
