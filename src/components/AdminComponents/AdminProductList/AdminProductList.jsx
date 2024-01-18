@@ -41,7 +41,7 @@ function AdminProductList() {
       <div className="content-container">
         <AdminSideBar />
         <div className="main-content">
-          <div className="product-list">
+          <div className="product-lists">
             <h2>Product : {categoryname}</h2>
             <div className="card-container">
               {Array.isArray(products.products) && products.products.map((product) => (

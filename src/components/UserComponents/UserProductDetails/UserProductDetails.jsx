@@ -9,17 +9,15 @@ function UserProductDetails() {
     const location = useLocation()
     const dispatch = useDispatch()
     const ProductId = location.state.id
-const id=localStorage.getItem("userData")
+    const id = localStorage.getItem("userData")
 
     const productData = useSelector(getProductById)
     useEffect(() => {
         dispatch(fetchAsyncProductsById(ProductId))
     }, [dispatch, ProductId])
 
-    console.log(productData);
-
     const HandleCart = (productId) => {
-        dispatch(fetchAsyncAddUserCart({id,productId}))
+        dispatch(fetchAsyncAddUserCart({ id, productId }))
     }
 
     return (

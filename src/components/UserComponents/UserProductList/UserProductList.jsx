@@ -1,15 +1,11 @@
 import React, { useEffect } from 'react'
-import './UserProductList.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAsyncProducts, getProducts } from '../../../Redux/Slices/ProductSlice';
+import './UserProductList.css'
 function UserProductList({ data }) {
-
 
   const dispatch = useDispatch();
   const product = useSelector(getProducts);
-  console.log(product.products, "product");
-  console.log(data, "jhjhshhb");
-
 
   useEffect(() => {
     dispatch(fetchAsyncProducts(data))
@@ -17,7 +13,6 @@ function UserProductList({ data }) {
 
 
   return (
-
      <div className='list-product'>
        {Array.isArray(product.products) && product.products.length > 0 && product.products.map((data) => (
         <div class="card" key={data._id}>
@@ -29,7 +24,6 @@ function UserProductList({ data }) {
           <p><button>Add to Cart</button></p>
         </div>
       ))}
-
      </div>
   )
 }

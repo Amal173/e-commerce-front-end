@@ -3,6 +3,8 @@ import './OrderList.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchAsyncAllOrders } from '../../../Redux/Slices/UserSlice'
 import { useNavigate } from 'react-router-dom'
+import AdminSideBar from '../AdminSideBar/AdminSideBar'
+import AdminHeader from '../AdminHeader/AdminHeader'
 function OrderList() {
     const dispatch=useDispatch()
     const navigate=useNavigate()
@@ -17,6 +19,9 @@ const handleViewOrder=(orderId)=>{
 }
 
     return (
+       <>
+        <AdminSideBar/>
+        <AdminHeader/>
         <div className='order-container'>
             <div className='order-list'>
                 <h1>Orders Table</h1>
@@ -42,6 +47,7 @@ const handleViewOrder=(orderId)=>{
                 </table>
             </div>
         </div>
+       </>
     )
 }
 

@@ -17,7 +17,6 @@ function UserOrders() {
   return (
     <>
       <UserHeader />
-    
       <div className='user-orders'>
         <div className='container'>
         <div className='tilte'>

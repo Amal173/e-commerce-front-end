@@ -9,59 +9,74 @@
     padding: 30px 50px;
     border-radius: 15px;
     background-color: #e1dada;
-  
+
     .title {
-      display: flex;
-      justify-content: space-between;
-  
-      i {
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
-      }
+        display: flex;
+        justify-content: space-between;
+
+        i {
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
     }
-  
+
     input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid transparent;
-      margin-bottom: 15px;
-      background-color: #fff;
-      color: #333;
-    }
-  
-    .buttons {
-      display: flex;
-      gap: 20px;
-      justify-content: flex-end;
-  
-      button {
-        padding: 7px 15px;
+        width: 100%;
+        padding: 10px;
         border-radius: 5px;
         border: 1px solid transparent;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        transition: background-color 0.3s;
-  
-        &.submit {
-          background-color: #4caf50;
-  
-          &:hover {
-            background-color: #45a049;
-          }
-        }
-  
-        &.cancel {
-          background-color: #e74c3c;
-  
-          &:hover {
-            background-color: #c0392b;
-          }
-        }
-      }
+        margin-bottom: 15px;
+        background-color: #fff;
+        color: #333;
     }
-  }
-  
+
+    .category-image {
+        position: relative;
+
+        input {
+            margin-bottom: 0; // Remove margin-bottom for better alignment with the image preview
+        }
+
+        .image-preview {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px; // Add margin-top for spacing
+            border-radius: 5px;
+            border: 1px solid #ddd; // Add border for a neat look
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+
+        button {
+            padding: 7px 15px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            transition: background-color 0.3s;
+
+            &.submit {
+                background-color: #4caf50;
+
+                &:hover {
+                    background-color: #45a049;
+                }
+            }
+
+            &.cancel {
+                background-color: #e74c3c;
+
+                &:hover {
+                    background-color: #c0392b;
+                }
+            }
+        }
+    }
+}

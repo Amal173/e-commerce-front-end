@@ -1,4 +1,4 @@
-.order-container {
+.customer-container {
   display: flex;
   max-width: 1400px;
   margin: 0 auto;
@@ -7,37 +7,37 @@
   height: 100vh;
 }
 
-.order-list {
+.customer-list {
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  margin-left: 190px;
   width: 100%;
-  margin-left: 200px;
 }
-.order-list h1 {
+.customer-list h1 {
   text-align: center;
 }
-.order-list table {
+.customer-list table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
-.order-list table th, .order-list table td {
+.customer-list table th, .customer-list table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
-.order-list table .table-head {
+.customer-list table .table-head {
   background-color: #f2f2f2;
 }
-.order-list table tr:nth-child(even) {
+.customer-list table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
-.order-list table tr:hover {
+.customer-list table tr:hover {
   background-color: #e0e0e0;
 }
-.order-list table button {
+.customer-list table button {
   padding: 6px 10px;
   background-color: #4caf50;
   color: #fff;
@@ -45,6 +45,6 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.order-list table button:hover {
+.customer-list table button:hover {
   background-color: #45a049;
 }

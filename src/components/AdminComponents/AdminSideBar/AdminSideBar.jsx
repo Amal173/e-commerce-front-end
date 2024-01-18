@@ -6,9 +6,9 @@ function AdminSideBar() {
   return (
     <div className="sidebar">
     <ul>
-      <li>Dashboard</li>
-      <li>Categories</li>
-      <li onClick={()=>navigate('/admin/products')}>Products</li>
+      <li onClick={()=>navigate('/admin ')}>Categories</li>
+      <li onClick={()=>navigate('/admin-orders')}>Orders</li>
+      <li onClick={()=>navigate('/customer-list')}>Customers</li>
     </ul>
   </div>
   )

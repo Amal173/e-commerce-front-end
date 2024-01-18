@@ -16,6 +16,9 @@ import CheckoutSuccess from './components/UserComponents/CheckoutSuccess/Checkou
 import UserOrders from './components/UserComponents/UserOrders/UserOrders';
 import OrderSuccess from './components/UserComponents/OrderSuccess/OrderSuccess';
 import OrderDetails from './components/AdminComponents/OrderDetails/OrderDetails';
+import CustomerDetails from './components/AdminComponents/CustomerDetails/CustomerDetails';
+import CustomerList from './components/AdminComponents/CustomerList/CustomerList';
+import OrderList from './components/AdminComponents/OrderList/OrderList';
 
 
 function App() {
@@ -36,6 +39,10 @@ function App() {
         <Route path='/orders' element={<UserOrders/>} />
         <Route path='/order-success' element={<OrderSuccess/>} />
         <Route path='/order-details' element={<OrderDetails/>} />
+        <Route path='/customer-details' element={<CustomerDetails/>} />
+        <Route path='/customer-list' element={<CustomerList/>} />
+        <Route path='/admin-orders' element={<OrderList/>} />
+        <Route path='/admin-orders-details' element={<OrderDetails/>} />
       </Routes>
     </div>
   );

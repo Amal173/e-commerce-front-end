@@ -4,11 +4,12 @@ import axios from "axios";
 
 const initialState = {
     loading: false,
-    userInfo: {}, // for user object
-    userToken: null, // for storing the JWT
+    userInfo: {},
+    userToken: null,
     error: null,
     success: false,
     user:[],
+    users:[],
     cart:[],
     userOrder:[],
     orderDetails:[],
@@ -54,6 +55,11 @@ export const fetchAsyncUserData = createAsyncThunk('users/fetchAsyncUserData', a
     console.log("response data get user data", response);
     return response.data;
 });
+export const fetchAsyncUser = createAsyncThunk('users/fetchAsyncUser', async (id) => {
+    const response = await axios.get(`http://localhost:4040/user`, );
+    console.log("response data get user", response);
+    return response.data;
+});
 
 export const fetchAsyncUserCartProducts = createAsyncThunk('users/fetchAsyncUserCartProducts', async (id) => {
     const response = await axios.get(`http://localhost:4040/user/cart/products/${id}`, );
@@ -64,7 +70,7 @@ export const fetchAsyncUserCartProducts = createAsyncThunk('users/fetchAsyncUser
 
 export const fetchAsyncUserCheckoutCart = createAsyncThunk('users/fetchAsyncUserCheckoutCart', async ({cartItems,userId,totalPrice}) => {
    try {
-    const response = await axios.post(`http://localhost:4040/stripe/create-checkout-session`, {cartItems,userId,totalPrice});
+    const response = await axios.post(`http://localhost:4040/order/create-checkout-session`, {cartItems,userId,totalPrice});
     console.log("response data get user cart checkout", response.data);
     if(response.data.url){
         window.location.href=response.data.url
@@ -88,19 +94,20 @@ export const fetchAsyncRetrieveSession = createAsyncThunk('users/fetchAsyncRetri
 });
 
 export const fetchAsyncUserOrders = createAsyncThunk('users/fetchAsyncUserOrders', async (id) => {
-    const response = await axios.get(`http://localhost:4040/stripe/userOrder/${id}`, );
+    const response = await axios.get(`http://localhost:4040/order/userOrder/${id}`, );
     console.log("response data get user order", response);
     return response.data;
 });
 
 export const fetchAsyncOrderDetails = createAsyncThunk('users/fetchAsyncOrderDetails', async (id) => {
-    const response = await axios.get(`http://localhost:4040/stripe/Order-details/${id}`, );
+    const response = await axios.get(`http://localhost:4040/order/Order-details/${id}`, );
     console.log("response data get user order details", response);
     return response.data;
+
 });
 
-export const fetchAsyncAllOrders = createAsyncThunk('users/fetchAsyncAllOrders', async (id) => {
-    const response = await axios.get(`http://localhost:4040/stripe/getOrder`, );
+export const fetchAsyncAllOrders = createAsyncThunk('users/fetchAsyncAllOrders', async () => {
+    const response = await axios.get(`http://localhost:4040/order/getOrder`, );
     console.log("response data get user order", response);
     return response.data;
 });
@@ -169,6 +176,10 @@ const userSlice = createSlice({
         builder.addCase(fetchAsyncOrderDetails.fulfilled, (state, { payload }) => {
             state.loading = false
             state.orderDetailsById = payload
+        });
+        builder.addCase(fetchAsyncUser.fulfilled, (state, { payload }) => {
+            state.loading = false
+            state.users = payload
         });
 
 

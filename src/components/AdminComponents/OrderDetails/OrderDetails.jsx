@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { fetchAsyncOrderDetails, fetchAsyncUserOrders } from '../../../Redux/Slices/UserSlice'
 import AdminHeader from '../AdminHeader/AdminHeader'
 import AdminSideBar from '../AdminSideBar/AdminSideBar'
@@ -8,18 +8,16 @@ import './OrderDetails.css'
 
 function OrderDetails() {
     const dispatch = useDispatch()
-    const navigate = useNavigate()
     const location = useLocation()
     const orderId = location.state.orderId;
     const { orderDetailsById } = useSelector((state) => state.users)
     console.log("userOrder", orderDetailsById.Orders);
     useEffect(() => {
         dispatch(fetchAsyncOrderDetails(orderId));
-    }, [dispatch])
+    }, [dispatch,orderId])
 
     return (
         <>
-            <AdminHeader />
             <AdminHeader />
             <div className="content-container">
                 <AdminSideBar />
@@ -67,11 +65,11 @@ function OrderDetails() {
                                 </tr>
                                 {orderDetailsById.Orders?.map((items, index) => (
                                     <>
-                                        {items.products.map((data ,index) => (
+                                        {items.products.map((data, index) => (
 
                                             <tr>
                                                 <td>{index + 1}</td>
-                                                <td style={{ display: 'flex' ,alignItems:'center'}}>{<img src={`http://localhost:4040/uploads/${data.productImages[0]}`} alt="" />} {data.productName}</td>
+                                                <td style={{ display: 'flex', alignItems: 'center' }}>{<img src={`http://localhost:4040/uploads/${data.productImages[0]}`} alt="" />} {data.productName}</td>
                                                 <td>{data.productPrice}</td>
                                             </tr>
                                         ))}

@@ -12,48 +12,48 @@
   flex: 1;
   padding: 20px;
 }
-.dashboard .content-container .main-content .product-list {
+.dashboard .content-container .main-content .product-lists {
   max-width: 1200px;
   margin: 0 auto;
 }
-.dashboard .content-container .main-content .product-list h2 {
+.dashboard .content-container .main-content .product-lists h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-.dashboard .content-container .main-content .product-list .card-container {
+.dashboard .content-container .main-content .product-lists .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
-.dashboard .content-container .main-content .product-list .card-container .card {
+.dashboard .content-container .main-content .product-lists .card-container .card {
   border: 1px solid #ddd;
   padding: 16px;
   cursor: pointer;
   transition: transform 0.3s;
 }
-.dashboard .content-container .main-content .product-list .card-container .card img {
+.dashboard .content-container .main-content .product-lists .card-container .card img {
   width: 40%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100px;
   margin-bottom: 12px;
 }
-.dashboard .content-container .main-content .product-list .card-container .card img:hover {
+.dashboard .content-container .main-content .product-lists .card-container .card img:hover {
   transform: scale(1.05);
 }
-.dashboard .content-container .main-content .product-list .card-container .card .card-details h3 {
+.dashboard .content-container .main-content .product-lists .card-container .card .card-details h3 {
   font-size: 18px;
   margin-bottom: 8px;
 }
-.dashboard .content-container .main-content .product-list .card-container .card .card-details p {
+.dashboard .content-container .main-content .product-lists .card-container .card .card-details p {
   font-size: 14px;
   margin-bottom: 8px;
 }
-.dashboard .content-container .main-content .product-list .card-container .card .card-details .actions {
+.dashboard .content-container .main-content .product-lists .card-container .card .card-details .actions {
   display: flex;
   gap: 10px;
 }
-.dashboard .content-container .main-content .product-list .card-container .card .card-details .actions button {
+.dashboard .content-container .main-content .product-lists .card-container .card .card-details .actions button {
   padding: 8px 16px;
   background-color: #4caf50;
   color: #fff;
@@ -63,13 +63,13 @@
   font-size: 14px;
   transition: background-color 0.3s;
 }
-.dashboard .content-container .main-content .product-list .card-container .card .card-details .actions button:hover {
+.dashboard .content-container .main-content .product-lists .card-container .card .card-details .actions button:hover {
   background-color: #45a049;
 }
-.dashboard .content-container .main-content .product-list .card-container .card .card-details .actions button:last-child {
+.dashboard .content-container .main-content .product-lists .card-container .card .card-details .actions button:last-child {
   background-color: #e74c3c;
 }
-.dashboard .content-container .main-content .product-list .card-container .card .card-details .actions button:last-child:hover {
+.dashboard .content-container .main-content .product-lists .card-container .card .card-details .actions button:last-child:hover {
   background-color: #c0392b;
 }
 

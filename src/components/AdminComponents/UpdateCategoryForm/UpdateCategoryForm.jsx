@@ -32,14 +32,14 @@ function UpdateCategoryForm(id) {
 
     }
 
-    const HandleSubmitForm =async () => {
+    const HandleSubmitForm = async () => {
         const { categoryName } = data
         console.log(id);
         const formData = new FormData();
         formData.append('categoryName', categoryName)
         formData.append('categoryImage', file)
-       await dispatch(fetchAsyncUpdateCategory({id, formData}));
-       await dispatch(fetchAsyncCategory());
+        await dispatch(fetchAsyncUpdateCategory({ id, formData }));
+        await dispatch(fetchAsyncCategory());
         handleCancelForm()
 
 

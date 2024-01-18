@@ -27,6 +27,19 @@
   background-color: #fff;
   color: #333;
 }
+.create-category-form .category-image {
+  position: relative;
+}
+.create-category-form .category-image input {
+  margin-bottom: 0;
+}
+.create-category-form .category-image .image-preview {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
 .create-category-form .buttons {
   display: flex;
   gap: 20px;
